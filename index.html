@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Primeiro Projeto com Bootstrap</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      .secao-customizada {
+        background-color: #f0f8ff;
+        padding: 40px;
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .secao-customizada h2 {
+        font-size: 2.5rem;
+        color: #333;
+      }
+
+      .secao-customizada p {
+        font-size: 1.2rem;
+        color: #666;
+        max-width: 800px;
+        margin: 0 auto;
+        line-height: 1.6;
+      }
+      @media (max-width: 768px) {
+        .secao-customizada {
+          padding: 20px;
+        }
+
+        .secao-customizada h2 {
+          font-size: 2rem;
+        }
+
+        .secao-customizada p {
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="container-fluid padding-2 bg-warning text-center">
+      <h1>Esse é o nome da página :D</h1>
+      <nav>
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Sobre Mim</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Entre em Contato</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container mt-5">
+      <div class="row mb-4">
+        <div class="col-md-12">
+          <div class="p-4 bg-primary border rounded-circle">
+            <h2>Primeiro parágrafo</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+              molestie, tortor non mattis ultricies, arcu neque blandit neque,
+              eget suscipit nunc justo sit amet risus. Pellentesque ac dictum
+              augue.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-4">
+        <div class="col-md-12">
+          <div class="p-4 bg-light border border-danger">
+            <h2>Segundo parágrafo</h2>
+            <p>
+              Ut tincidunt sapien a malesuada scelerisque. Suspendisse luctus,
+              mi eu dignissim lobortis, risus sem eleifend dui, nec fermentum mi
+              massa sodales nisl.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-4">
+        <div class="col-md-12">
+          <div class="p-4 bg-secondary border rounded">
+            <h2>Terceiro parágrafo</h2>
+            <p>
+              Donec ac neque eu tellus elementum ornare eu vel sapien. Cras quis
+              lorem gravida, posuere elit eget, feugiat sem.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section class="secao-customizada">
+      <h2>SEÇÃO NOVA</h2>
+      <p>Seção feita com CSS puro, enjoy</p>
+    </section>
+
+    <footer class="bg-info text-white text-center py-3">
+      <p>&copy; <span id="anoAtual"></span> Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+      document.getElementById("anoAtual").textContent =
+        new Date().getFullYear();
+    </script>
+  </body>
+</html>
